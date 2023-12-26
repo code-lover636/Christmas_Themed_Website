@@ -1,365 +1,70 @@
-<div class="div">
-    <div class="div-2">
-      <div class="div-3">
-        <img
-          loading="lazy"
-          srcset="..."
-          class="img"
-        />
-        <div class="div-4">
-          <div class="div-5">
-            <div class="div-6">HOME</div>
-            <div class="div-7">ABOUT</div>
-            <div class="div-8">HISOTRY</div>
-          </div>
-          <div class="div-9">MERRY CHRISTMAS</div>
-          <div class="div-10">
-            <div class="div-11">
-              May your days be merry and bright, and may all your Christmases be
-              white
-            </div>
-            <div class="div-12">
-              <div class="div-13">
-                <div class="column"><div class="div-14">EXPLORE</div></div>
-                <div class="column-2">
-                  <img
-                    loading="lazy"
-                    srcset="..."
-                    class="img-2"
-                  />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Christmas🎅</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="./scripts.js" defer></script>
+</head>
+
+<body>
+    <section class="container">
+        <section class="home">
+            <nav>
+                <div></div>
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">History</a></li>
+                </ul>
+                <div class="musicbtn" id="btn">
+                    <i class="bi bi-volume-up-fill active"></i>
+                    <i class="bi bi-volume-mute-fill"></i>
                 </div>
-              </div>
+            </nav>
+            <main>
+                <h1>Merry Christmas</h1>
+                <small>May your days be merry and bright, and may all your Christmases be white</small>
+            </main>
+            <a class="explore" href="">Explore</a>
+        </section>
+    
+        <section class="about">
+            <nav>
+                <div></div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li class="active"><a href="">About</a></li>
+                    <li><a href="">History</a></li>
+                </ul>
+                <div class="musicbtn" id="btn">
+                    <i class="bi bi-volume-up-fill active"></i>
+                    <i class="bi bi-volume-mute-fill"></i>
+                </div>
+            </nav>
+            <div class="board">
+                <img alt="santa" src="./assets/santa.png" class="santa">
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img
-      loading="lazy"
-      srcset="..."
-      class="img-3"
-    />
-    <div class="div-15">
-      <div class="div-16">
-        <img
-          loading="lazy"
-          srcset="..."
-          class="img"
-        />
-        <div class="div-17">
-          <div class="div-18">HOME</div>
-          <div class="div-19">ABOUT</div>
-          <div class="div-20">HISOTRY</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <style>
-    .div {
-      justify-content: center;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-    }
-    .div-2 {
-      background-color: #fff;
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-    }
-    @media (max-width: 991px) {
-      .div-2 {
-        max-width: 100%;
-      }
-    }
-    .div-3 {
-      disply: flex;
-      flex-direction: column;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      min-height: 1080px;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      padding: 49px 60px;
-    }
-    @media (max-width: 991px) {
-      .div-3 {
-        max-width: 100%;
-        padding: 0 20px;
-      }
-    }
-    .img {
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-    .div-4 {
-      position: relative;
-      display: flex;
-      margin-top: 17px;
-      width: 910px;
-      max-width: 100%;
-      flex-direction: column;
-      align-items: end;
-    }
-    .div-5 {
-      display: flex;
-      width: 830px;
-      max-width: 100%;
-      justify-content: space-between;
-      gap: 20px;
-    }
-    @media (max-width: 991px) {
-      .div-5 {
-        flex-wrap: wrap;
-      }
-    }
-    .div-6 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      border-radius: 50px;
-      mix-blend-mode: plus-darker;
-      background-color: rgba(255, 0, 0, 0.91);
-      flex-grow: 1;
-      padding: 18px 56px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-6 {
-        padding: 0 20px;
-      }
-    }
-    .div-7 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      width: 253px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    .div-8 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      width: 253px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    .div-9 {
-      justify-content: center;
-      color: #ca2424;
-      text-align: center;
-      mix-blend-mode: multiply;
-      align-self: stretch;
-      margin-top: 164px;
-      font: 700 110px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-9 {
-        max-width: 100%;
-        font-size: 40px;
-        margin-top: 40px;
-      }
-    }
-    .div-10 {
-      align-self: stretch;
-      display: flex;
-      margin-top: 17px;
-      flex-direction: column;
-      padding: 0 73px;
-    }
-    @media (max-width: 991px) {
-      .div-10 {
-        max-width: 100%;
-        padding: 0 20px;
-      }
-    }
-    .div-11 {
-      color: #ff5c00;
-      text-align: center;
-      font: 400 25px Schoolbell, sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-11 {
-        max-width: 100%;
-      }
-    }
-    .div-12 {
-      align-self: end;
-      margin-top: 459px;
-      width: 509px;
-      max-width: 100%;
-    }
-    @media (max-width: 991px) {
-      .div-12 {
-        margin-top: 40px;
-      }
-    }
-    .div-13 {
-      gap: 20px;
-      display: flex;
-    }
-    @media (max-width: 991px) {
-      .div-13 {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0px;
-      }
-    }
-    .column {
-      display: flex;
-      flex-direction: column;
-      line-height: normal;
-      width: 73%;
-      margin-left: 0px;
-    }
-    @media (max-width: 991px) {
-      .column {
-        width: 100%;
-      }
-    }
-    .div-14 {
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-      border-radius: 200px;
-      mix-blend-mode: plus-darker;
-      background-color: rgba(121, 46, 46, 0.91);
-      width: 100%;
-      padding: 19px 52px;
-      font: 700 20px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-14 {
-        margin-top: 40px;
-        padding: 0 20px;
-      }
-    }
-    .column-2 {
-      display: flex;
-      flex-direction: column;
-      line-height: normal;
-      width: 27%;
-      margin-left: 20px;
-    }
-    @media (max-width: 991px) {
-      .column-2 {
-        width: 100%;
-      }
-    }
-    .img-2 {
-      aspect-ratio: 1.23;
-      object-fit: contain;
-      object-position: center;
-      width: 123px;
-      overflow: hidden;
-      margin-top: 29px;
-      max-width: 100%;
-      flex-grow: 1;
-    }
-    @media (max-width: 991px) {
-      .img-2 {
-        margin-top: 40px;
-      }
-    }
-    .img-3 {
-      aspect-ratio: 1.78;
-      object-fit: contain;
-      object-position: center;
-      width: 100%;
-      overflow: hidden;
-    }
-    @media (max-width: 991px) {
-      .img-3 {
-        max-width: 100%;
-      }
-    }
-    .div-15 {
-      background-color: #caecf6;
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      justify-content: center;
-    }
-    @media (max-width: 991px) {
-      .div-15 {
-        max-width: 100%;
-      }
-    }
-    .div-16 {
-      disply: flex;
-      flex-direction: column;
-      overflow: hidden;
-      position: relative;
-      display: flex;
-      min-height: 1080px;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      padding: 50px 60px;
-    }
-    @media (max-width: 991px) {
-      .div-16 {
-        max-width: 100%;
-        padding: 0 20px;
-      }
-    }
-    .div-17 {
-      position: relative;
-      display: flex;
-      width: 830px;
-      max-width: 100%;
-      justify-content: space-between;
-      gap: 20px;
-      margin: 17px 0 715px;
-    }
-    @media (max-width: 991px) {
-      .div-17 {
-        flex-wrap: wrap;
-        margin-bottom: 40px;
-      }
-    }
-    .div-18 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      border-radius: 50px;
-      background-color: rgba(216, 35, 35, 0.74);
-      flex-grow: 1;
-      padding: 18px 56px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    @media (max-width: 991px) {
-      .div-18 {
-        padding: 0 20px;
-      }
-    }
-    .div-19 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      width: 253px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-    .div-20 {
-      justify-content: center;
-      color: #000;
-      text-align: center;
-      width: 253px;
-      font: 700 25px Mountains of Christmas, -apple-system, Roboto, Helvetica,
-        sans-serif;
-    }
-  </style>
-  
+        </section>
+    
+        <section class="history">
+            <nav>
+                <div></div>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li class="active"><a href="">History</a></li>
+                </ul>
+                <div class="musicbtn" id="btn">
+                    <i class="bi bi-volume-up-fill active"></i>
+                    <i class="bi bi-volume-mute-fill"></i>
+                </div>
+            </nav>
+        </section>
+    </section>
+
+</body>
+</html>
