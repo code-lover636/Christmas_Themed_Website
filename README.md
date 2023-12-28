@@ -1,3 +1,4 @@
-#MERRY CHRISTMAS
+# MERRY CHRISTMAS
 
-See hosted [website](https://christmassjoy.netlify.app/)https://christmassjoy.netlify.app/
+See hosted [website](https://christmassjoy.netlify.app/)
+Website made as a part of WebFlake competition by TinkerHub
