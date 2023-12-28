@@ -12,13 +12,16 @@
 
 <body>
     <section class="container">
-        <section class="home">
+        <div class="nightsky">
+            <img src="./assets/reindeer.png" alt="reindeer" class="reindeer">
+        </div>
+        <section class="home" id="home">
             <nav>
                 <div></div>
                 <ul>
-                    <li class="active"><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">History</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#history">History</a></li>
                 </ul>
                 <div class="musicbtn" id="btn">
                     <i class="bi bi-volume-up-fill active"></i>
@@ -29,16 +32,19 @@
                 <h1>Merry Christmas</h1>
                 <small>May your days be merry and bright, and may all your Christmases be white</small>
             </main>
-            <a class="explore" href="">Explore</a>
+            <div class="grp">
+                <div class="gift"></div>
+                <p>PRESS</p>
+            </div>
         </section>
     
-        <section class="about">
+        <section class="about" id="about">
             <nav>
                 <div></div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li class="active"><a href="">About</a></li>
-                    <li><a href="">History</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li><a href="#history">History</a></li>
                 </ul>
                 <div class="musicbtn" id="btn">
                     <i class="bi bi-volume-up-fill active"></i>
@@ -47,22 +53,38 @@
             </nav>
             <div class="board">
                 <img alt="santa" src="./assets/santa.png" class="santa">
+                <h1>About</h1>
+                <p class="about-desc">Christmas, celebrated on December 25th every year, is one of the most cherished and widely observed holidays around the world. Rooted in both religious significance and cultural traditions, this festive season brings joy, warmth, and togetherness to millions of people across different continents and cultures.</p>
+                <p>From the twinkling lights adorning homes and streets to the melodious carols that echo through the chilly winter air, Christmas is marked by a myriad of symbols and traditions. The Christmas tree, adorned with ornaments and lights, serves as a centerpiece in many homes, while stockings hung by the fireplace eagerly await gifts from Santa Claus.</p>
+                <p>At its heart, Christmas is a time for family reunions and gatherings. It's a season of generosity, where acts of giving and sharing bring communities closer together. Whether it's preparing a festive feast, exchanging heartfelt gifts, or simply spending quality time with loved ones, the essence of Christmas lies in fostering bonds of love, understanding, and compassion.</p>
             </div>
         </section>
     
-        <section class="history">
+        <section class="history" id="history">
             <nav>
                 <div></div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li class="active"><a href="">History</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="active"><a href="#history">History</a></li>
                 </ul>
                 <div class="musicbtn" id="btn">
                     <i class="bi bi-volume-up-fill active"></i>
                     <i class="bi bi-volume-mute-fill"></i>
                 </div>
             </nav>
+            <main>
+                <h1>History</h1>
+                <p>The history of Christmas is a tapestry woven with religious, cultural, and historical threads that span over two millennia. 
+                    The origins of this beloved holiday can be traced back to ancient pagan festivals, Christian traditions, and cultural amalgamations.
+                    Long before the birth of Christ, various cultures celebrated festivals around the winter solstice. 
+                    In ancient Rome, the midwinter festival of Saturnalia honored the god Saturn and was characterized by feasting, gift-giving, and a temporary reversal of social norms.
+                    Similarly, in Scandinavia, the Norse celebrated Yule, a festival marking the winter solstice with feasts that lasted for several days.
+                </p>
+                <p>
+                    The precise date of Jesus Christ's birth is not definitively known, and early Christians did not initially celebrate it as a distinct holiday. By the early 4th century, however, possibly influenced by pagan festivals and the desire to provide a Christian alternative, December 25th began to emerge as the date for Christmas in the Western Christian Church. By the Middle Ages, Christmas had become a significant religious feast day across Europe.
+                </p>
+            </main>
         </section>
     </section>
 

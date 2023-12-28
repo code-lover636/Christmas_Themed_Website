@@ -37,7 +37,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 nav {
@@ -60,17 +60,17 @@ nav {
         gap: 10em;
         border-radius: 200px;
         padding: 1em 3em;
-        background: rgba(255, 255, 255, 0.32);
+        background: rgba(0, 0, 0, 0.649);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(0, 0, 0, 0.1);
         li a{
             &:hover{
-                color: red;
+                color: rgb(221, 255, 0);
             }
         }
         .active {
             a {
-                color: rgb(169, 3, 3);
+                color: rgb(238, 255, 0);
             }
         }
     }
@@ -93,6 +93,45 @@ nav {
             padding-bottom: 5px;
             transform: scale(1.4);
         }
+    }
+}
+
+.container .nightsky{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-image: url("./assets/nightsky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 200;
+    pointer-events: none;
+    opacity: 0;
+    .move{
+        animation: slide 5s ease-in;
+    }
+}
+
+.fade{
+    opacity: 0;
+    animation: fade 5s ease-in;
+}
+
+@keyframes slide {
+    from{
+        transform: translate(0%, 100%);
+    }
+    to{
+        transform: translate(300%, -100%);
+    }
+}
+
+@keyframes fade {
+    0%,50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
 
@@ -127,16 +166,34 @@ nav {
             color: rgba(95, 84, 5, 0.581);
         }
     }
-
-    .explore {
-        background-color: #CA2424;
-        text-transform: uppercase;
-        mix-blend-mode: multiply;
-        color: yellow;
-        padding: 8px 35px;
+    .grp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{font-family: 'Courier New', Courier, monospace;}
     }
+    .gift{
+        background-image: url("./assets/giftbox.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        animation: tilt .8s infinite ease;
+    }
+
 }
 
+@keyframes tilt {
+    0%, 100%{
+        transform: rotate(-20deg);
+    }
+    50%{
+        transform: rotate(20deg);
+    }
+}
 .about {
     background-image: url("./assets/bg2.png");
     background-repeat: no-repeat;
@@ -146,20 +203,33 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 10em 0 10em;
+    padding: 3em 10em 0 10em;
     .board {
         width: 100%;
-        height: 500px;
+        height: auto;
         border-radius: 15px;
         background: rgba(255, 255, 255, 0.32);
         backdrop-filter: blur(10px);
         position: relative;
+        padding: 3em 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 2em;
         .santa{
             height: 300px;
             width: auto;
             position: absolute;
             top: 25%;
             left: -9%;
+        }
+        h1{
+            font-size: 3.5rem;
+            color:#CA2424;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
         }
     }
 }
@@ -169,10 +239,25 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 10em;
+    padding: 10em 5em 3em 5em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding-bottom: 3em;
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        gap: 2em;
+        max-width: 1000px;
+        h1{
+            font-size: 3.5rem;
+            color:#ffffff;
+            text-align: center;
+        }
+        p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
 }

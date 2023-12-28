@@ -33,7 +33,7 @@ body .container::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 nav {
@@ -56,16 +56,16 @@ nav ul {
   gap: 10em;
   border-radius: 200px;
   padding: 1em 3em;
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(0, 0, 0, 0.649);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 nav ul li a:hover {
-  color: red;
+  color: rgb(221, 255, 0);
 }
 nav ul .active a {
-  color: rgb(169, 3, 3);
+  color: rgb(238, 255, 0);
 }
 nav .musicbtn {
   all: unset;
@@ -88,6 +88,43 @@ nav .musicbtn .active {
   transform: scale(1.4);
 }
 
+.container .nightsky {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-image: url("./assets/nightsky.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 200;
+  pointer-events: none;
+  opacity: 0;
+}
+.container .nightsky .move {
+  animation: slide 5s ease-in;
+}
+
+.fade {
+  opacity: 0;
+  animation: fade 5s ease-in;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0%, 100%);
+  }
+  to {
+    transform: translate(300%, -100%);
+  }
+}
+@keyframes fade {
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .home {
   background-image: url("./assets/bg1.png");
   background-repeat: no-repeat;
@@ -116,14 +153,34 @@ nav .musicbtn .active {
   font-size: 25px;
   color: rgba(95, 84, 5, 0.581);
 }
-.home .explore {
-  background-color: #CA2424;
-  text-transform: uppercase;
-  mix-blend-mode: multiply;
-  color: yellow;
-  padding: 8px 35px;
+.home .grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .grp p {
+  font-family: "Courier New", Courier, monospace;
+}
+.home .gift {
+  background-image: url("./assets/giftbox.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  animation: tilt 0.8s infinite ease;
 }
 
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
 .about {
   background-image: url("./assets/bg2.png");
   background-repeat: no-repeat;
@@ -133,16 +190,22 @@ nav .musicbtn .active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 10em 0 10em;
+  padding: 3em 10em 0 10em;
 }
 .about .board {
   width: 100%;
-  height: 500px;
+  height: auto;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.32);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   position: relative;
+  padding: 3em 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2em;
 }
 .about .board .santa {
   height: 300px;
@@ -151,16 +214,38 @@ nav .musicbtn .active {
   top: 25%;
   left: -9%;
 }
+.about .board h1 {
+  font-size: 3.5rem;
+  color: #CA2424;
+}
+.about .board p {
+  font-family: "Courier New", Courier, monospace;
+}
 
 .history {
   background-image: url("./assets/bg3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 10em;
+  padding: 10em 5em 3em 5em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding-bottom: 3em;
+}
+.history main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  gap: 2em;
+  max-width: 1000px;
+}
+.history main h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.history main p {
+  font-family: "Courier New", Courier, monospace;
 }/*# sourceMappingURL=index.css.map */
