@@ -21,6 +21,7 @@ const gift = e=>{
     const sky = document.querySelector(".nightsky");
     sky.children[0].classList.toggle("move");
     sky.classList.toggle("fade");
+    giftbtn.children[1].innerHTML = "Double Tap"
 }
 
 const giftbtn = document.querySelector(".grp");
