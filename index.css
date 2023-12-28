@@ -126,16 +126,27 @@ nav .musicbtn .active {
   }
 }
 .home {
-  background-image: url("./assets/bg1.png");
+  background-image: url("./assets/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 10em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.home .blur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10em;
   padding-bottom: 3em;
+  background-color: rgba(255, 255, 255, 0.11);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 100%;
+  width: 100%;
 }
 .home main {
   display: flex;
@@ -145,13 +156,12 @@ nav .musicbtn .active {
 }
 .home main h1 {
   font-size: 80px;
-  color: #CA2424;
+  color: #e02828;
   text-transform: uppercase;
-  mix-blend-mode: multiply;
 }
 .home main small {
   font-size: 25px;
-  color: rgba(95, 84, 5, 0.581);
+  color: rgb(0, 0, 0);
 }
 .home .grp {
   display: flex;
