@@ -252,6 +252,12 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
+    marquee{
+        font-size: 5rem;
+        position: absolute;
+        bottom: 0;
+    }
     main{
         display: flex;
         flex-direction: column;

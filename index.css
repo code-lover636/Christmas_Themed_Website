@@ -242,6 +242,12 @@ nav .musicbtn .active {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
+}
+.history marquee {
+  font-size: 5rem;
+  position: absolute;
+  bottom: 0;
 }
 .history main {
   display: flex;
